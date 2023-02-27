@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/BungeeSys/BungeeSys.iml" filepath="$PROJECT_DIR$/BungeeSys/BungeeSys.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LobbySystem/LobbySystem.iml" filepath="$PROJECT_DIR$/LobbySystem/LobbySystem.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/SRC.iml" filepath="$PROJECT_DIR$/.idea/SRC.iml" />
+    </modules>
+  </component>
+</project>
