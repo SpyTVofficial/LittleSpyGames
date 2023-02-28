@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/CBSystem/CBSystem.iml" filepath="$PROJECT_DIR$/CBSystem/CBSystem.iml" />
       <module fileurl="file://$PROJECT_DIR$/LobbySystem/LobbySystem.iml" filepath="$PROJECT_DIR$/LobbySystem/LobbySystem.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/SRC.iml" filepath="$PROJECT_DIR$/.idea/SRC.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpysNCrims/SpysNCrims.iml" filepath="$PROJECT_DIR$/SpysNCrims/SpysNCrims.iml" />
     </modules>
   </component>
 </project>

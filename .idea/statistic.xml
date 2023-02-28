@@ -3,7 +3,7 @@
   <component name="Statistic">
     <option name="excludedDirectories">
       <list>
-        <option value="$PROJECT_DIR$/LobbySystem" />
+        <option value="$PROJECT_DIR$/out" />
       </list>
     </option>
   </component>

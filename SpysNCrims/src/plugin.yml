@@ -1,0 +1,9 @@
+name: SNC
+version: 1.0
+author: itsSpyTV
+main: me.Spy.Main.Main
+commands:
+   stats:
+   dubassdommxd:
+   debugstop:
+   start:
