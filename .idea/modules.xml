@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/BungeeSys/BungeeSys.iml" filepath="$PROJECT_DIR$/BungeeSys/BungeeSys.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CBSystem/CBSystem.iml" filepath="$PROJECT_DIR$/CBSystem/CBSystem.iml" />
       <module fileurl="file://$PROJECT_DIR$/LobbySystem/LobbySystem.iml" filepath="$PROJECT_DIR$/LobbySystem/LobbySystem.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/SRC.iml" filepath="$PROJECT_DIR$/.idea/SRC.iml" />
     </modules>
