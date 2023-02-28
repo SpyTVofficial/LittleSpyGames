@@ -17,7 +17,7 @@ public class TeamChat extends Command {
         if (p.hasPermission("System.Teamchat")) {
             if (args.length == 0) {
                 p.sendMessage(Utils.prefix + "§cBenutzung: /tc <login|logout> | <Nachricht>");
-            } else if(args.length == 1) {
+            } else if(args.length >= 0) {
                 if (args[0].equalsIgnoreCase("login")) {
                     if (!Utils.teamchat_logged_in.contains(p)) {
                         p.sendMessage(Utils.tcprefix + "§aErfolgreich eingeloggt!");
@@ -33,7 +33,6 @@ public class TeamChat extends Command {
                         p.sendMessage(Utils.tcprefix + "§cDu musst du zuerst eingeloggt sein!");
                     }
                 }
-            } else if(args.length >= 1) {
                 StringBuilder message = new StringBuilder();
                 for (int i = 1; i < args.length; i++) {
                     message.append(args[i]).append(" ");

@@ -41,6 +41,7 @@ public class Main extends Plugin {
         getProxy().getPluginManager().registerCommand(this, new Ping());
         getProxy().getPluginManager().registerCommand(this, new Report());
         getProxy().getPluginManager().registerCommand(this, new SetCoins());
+        getProxy().getPluginManager().registerCommand(this, new SocialSpy());
         getProxy().getPluginManager().registerCommand(this, new TeamChat());
         getProxy().getPluginManager().registerCommand(this, new UnBan());
         getProxy().getPluginManager().registerCommand(this, new UnMute());

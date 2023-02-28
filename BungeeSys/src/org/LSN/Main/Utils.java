@@ -15,4 +15,5 @@ public class Utils {
 
     public static ArrayList<ProxiedPlayer> report_logged_in = new ArrayList<>();
     public static ArrayList<ProxiedPlayer> teamchat_logged_in = new ArrayList<>();
+    public static ArrayList<ProxiedPlayer> socialspy = new ArrayList<>();
 }
