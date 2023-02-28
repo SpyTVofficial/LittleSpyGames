@@ -14,17 +14,19 @@ public class SocialSpy extends Command {
     public void execute(CommandSender sender, String[] args) {
         ProxiedPlayer p = (ProxiedPlayer) sender;
         if(p.hasPermission("System.SocialSpy")){
-            if(args[0].equalsIgnoreCase("an")){
-                if(!Utils.socialspy.contains(p)){
-                    Utils.socialspy.add(p);
-                    p.sendMessage(Utils.prefix + "§aDu liest nun alle Nachrichten der Spieler mit!");
-                } else {
-                    p.sendMessage(Utils.prefix + "§cSocialSpy ist bereits aktiviert!");
-                }
-            } else if(args[0].equalsIgnoreCase("aus")){
-                if(Utils.socialspy.contains(p)){
-                    Utils.socialspy.remove(p);
-                    p.sendMessage(Utils.prefix + "§cDu liest die Nachrichten nun nicht mehr mit!");
+            if (args.length == 1) {
+                if(args[0].equalsIgnoreCase("an")){
+                    if(!Utils.socialspy.contains(p)){
+                        Utils.socialspy.add(p);
+                        p.sendMessage(Utils.prefix + "§aDu liest nun alle Nachrichten der Spieler mit!");
+                    } else {
+                        p.sendMessage(Utils.prefix + "§cSocialSpy ist bereits aktiviert!");
+                    }
+                } else if(args[0].equalsIgnoreCase("aus")) {
+                    if (Utils.socialspy.contains(p)) {
+                        Utils.socialspy.remove(p);
+                        p.sendMessage(Utils.prefix + "§cDu liest die Nachrichten nun nicht mehr mit!");
+                    }
                 }
             } else {
                 p.sendMessage(Utils.prefix + "§cBenutzung: /socialspy <an/aus>");
