@@ -55,7 +55,7 @@ public class TeamChat extends Command {
                             if (args[0].equalsIgnoreCase("login")) {
                                 break;
                             }
-                            team.sendMessage(Utils.tcprefix + "§b " + p.getDisplayName() + "§b: " + message.toString());
+                            team.sendMessage(Utils.tcprefix + "§b" + p.getDisplayName() + "§b: " + message.toString());
                         }
                     }
                 } else {

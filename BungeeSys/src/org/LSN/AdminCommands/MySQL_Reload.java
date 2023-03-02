@@ -22,6 +22,7 @@ public class MySQL_Reload extends Command {
                 p.sendMessage(Utils.prefix + "§cVerbindung getrennt...");
                 MySQL_Connect.connect();
                 p.sendMessage(Utils.prefix + "§aVerbindung erfolgreich!");
+                System.out.println(p.getDisplayName() + " reloaded the MySQL backend");
             }
         } else {
             p.sendMessage(Utils.noperms);

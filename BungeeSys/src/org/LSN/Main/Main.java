@@ -28,6 +28,7 @@ public class Main extends Plugin {
         getProxy().getPluginManager().registerListener(this, new OnPing());
         getProxy().getPluginManager().registerListener(this, new PostLogin());
         //Commands
+        getProxy().getPluginManager().registerCommand(this, new AdminChat());
         getProxy().getPluginManager().registerCommand(this, new Ban());
         getProxy().getPluginManager().registerCommand(this, new Broadcast());
         getProxy().getPluginManager().registerCommand(this, new Coins());

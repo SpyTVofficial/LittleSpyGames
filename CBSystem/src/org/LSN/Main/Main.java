@@ -17,5 +17,4 @@ public class Main extends JavaPlugin {
         getCommand("warp").setExecutor(new Warp());
         Bukkit.getPluginManager().registerEvents(new JoinQuit(), this);
     }
-
 }
