@@ -2,8 +2,11 @@ package org.LSN.Utils;
 
 import org.bukkit.Material;
 import org.bukkit.event.Listener;
+import org.bukkit.event.block.BlockBreakEvent;
+import org.bukkit.event.block.BlockPlaceEvent;
 import org.bukkit.event.entity.EntityDamageEvent;
 import org.bukkit.event.entity.FoodLevelChangeEvent;
+import org.bukkit.event.weather.WeatherChangeEvent;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
@@ -26,6 +29,19 @@ public class Utils implements Listener {
     }
 
     public void onHunger(FoodLevelChangeEvent e){
+        e.setCancelled(true);
+        e.setFoodLevel(20);
+    }
+
+    public void onBreak(BlockBreakEvent e){
+        e.setCancelled(true);
+    }
+
+    public void onPlace(BlockPlaceEvent e){
+        e.setCancelled(true);
+    }
+
+    public void onWeather(WeatherChangeEvent e){
         e.setCancelled(true);
     }
 

@@ -30,6 +30,7 @@ public class Gadgets implements Listener {
             Inventory Inv = Bukkit.createInventory(p, 27, "§6§lGadgets");
             for (int i = 0; i < Inv.getSize(); i++)
                 Inv.setItem(i, Utils.createItem(Material.STAINED_GLASS_PANE, 1, 15, " "));
+            Inv.setItem(1, Utils.createItem(Material.FEATHER, 1, 0, "§b§lSpeed"));
             Inv.setItem(12, Utils.createItem(Material.FISHING_ROD, 1, 0, "§5§lEnterhaken"));
             Inv.setItem(13, Utils.createItem(Material.FEATHER, 1, 0, "§b§lFliegen"));
             Inv.setItem(14, Utils.createItem(Material.IRON_PLATE, 1, 0, "§a§lJumpPads"));
@@ -96,6 +97,19 @@ public class Gadgets implements Listener {
                     dj.add(p);
                     p.closeInventory();
                     p.sendMessage(Utils.prefix + "§aDoubleJump §aaktiviert!");
+                }
+            }
+            else if (e.getCurrentItem().getItemMeta().getDisplayName().equals("§b§lSpeed")) {
+                if (speed.contains(p)) {
+                    p.closeInventory();
+                    p.setWalkSpeed(0.2f);
+                    p.setFlySpeed(0.2f);
+                    p.sendMessage(Utils.prefix + "§bSpeed §cdeaktiviert!");
+                } else {
+                    p.closeInventory();
+                    p.setWalkSpeed(20);
+                    p.setFlySpeed(20);
+                    p.sendMessage(Utils.prefix + "§bSpeed §aaktiviert!");
                 }
             }
             e.setCancelled(true);

@@ -18,6 +18,10 @@ public class SetScoreboard implements Listener {
         obj.setDisplayName("§c§lLittle§f§lSpy§b§lGames");
         obj.setDisplaySlot(DisplaySlot.SIDEBAR);
 
+        Score server = obj.getScore("§7Server:");
+        Score pServer = obj.getScore("§6» Lobby");
+        Score spacer01 = obj.getScore("");
+
         Score rang = obj.getScore("§7Rang:");
         if(p.hasPermission("Rang.Leitung")){
             Score getRang = obj.getScore("§8» §4§lLeitung");
@@ -45,18 +49,16 @@ public class SetScoreboard implements Listener {
             getRang.setScore(7);
         }
 
-        Score spacer01 = obj.getScore(" ");
-
+        Score spacer02 = obj.getScore("");
         Score dc = obj.getScore("§7Discord:");
-        Score dclink = obj.getScore("§6discord.littlespynetwork.tk");
-
-        Score spacer02 = obj.getScore(" ");
-
+        Score dclink = obj.getScore("§6» discord.littlespynetwork.tk");
+        Score spacer03 = obj.getScore("");
         Score name = obj.getScore("§7Name:");
-        Score pname = obj.getScore("§6" + p.getDisplayName());
+        Score pname = obj.getScore("§6» " + p.getDisplayName());
 
-        Score spacer03 = obj.getScore(" ");
 
+        server.setScore(11);
+        pServer.setScore(10);
         spacer01.setScore(9);
         rang.setScore(8);
         spacer02.setScore(6);

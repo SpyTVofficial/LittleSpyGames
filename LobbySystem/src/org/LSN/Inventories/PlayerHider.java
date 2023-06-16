@@ -41,6 +41,7 @@ public class PlayerHider implements Listener {
             for (Player players : Bukkit.getOnlinePlayers())
                 p.showPlayer(players);
             p.getOpenInventory().close();
+            p.sendMessage(Utils.prefix + "§bDu siehst nun §aalle Spieler§b!");
         }
         if(e.getCurrentItem().getItemMeta().getDisplayName().contains("§5Nur Premium anzeigen")){
             for (Player players : Bukkit.getOnlinePlayers()) {
@@ -50,11 +51,13 @@ public class PlayerHider implements Listener {
                     p.hidePlayer(players);
                 }
             }
+            p.sendMessage(Utils.prefix + "§bDu siehst nun §5Premium Spieler§b!");
             p.getOpenInventory().close();
         }
         if(e.getCurrentItem().getItemMeta().getDisplayName().contains("§cKeine Spieler anzeigen")){
             for (Player players : Bukkit.getOnlinePlayers())
                 p.hidePlayer(players);
+            p.sendMessage(Utils.prefix + "§bDu siehst nun §ckeine Spieler§b!");
             p.getOpenInventory().close();
         }
     }

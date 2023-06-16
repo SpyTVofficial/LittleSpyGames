@@ -1,0 +1,13 @@
+name: Prison
+version: 1.0
+author: LSN
+main: org.LSN.Main.Main
+commands:
+  autosell:
+  autopickup:
+  autosmelt:
+  mine:
+  sellall:
+  settings:
+  spawn:
+  manage:

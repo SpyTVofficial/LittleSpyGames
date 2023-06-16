@@ -22,7 +22,7 @@ public class LobbyState implements Listener {
 		Location spawn = new Location(Bukkit.getWorld("mapp"), -324D, 68D, 231D);
 		Scoreboard board = Bukkit.getScoreboardManager().getNewScoreboard();
 		Objective obj = board.registerNewObjective("abcd", "abcd");
-		obj.setDisplaySlot(DisplaySlot.SIDEBAR);
+		obj.setDisplaySlot(DisplaySlot.SIDEBAR) ;
 		obj.setDisplayName("�f�lLittleSpyGames");
 		obj.getScore(" ").setScore(3);
 		obj.getScore("�aDeine Rolle:").setScore(2);
